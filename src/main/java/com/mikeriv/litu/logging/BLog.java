@@ -1,15 +1,12 @@
 package com.mikeriv.litu.logging;
 
-
-import com.mikeriv.litu.BuildConfig;
-
 /**
  * Created by mlrivera on 2/4/17.
  */
 
 public class BLog {
 
-    public static final boolean SHOULD_DEBUG = BuildConfig.DEBUG;
+    public static final boolean SHOULD_DEBUG = false;
 
     public static void i(String tag, String string) {
         if (!SHOULD_DEBUG || string == null) {
